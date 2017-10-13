@@ -36,7 +36,7 @@ export class CoursesComponent implements OnInit {
     this.inscricao.unsubscribe();
   }
 
-  nextPagina(){
+  nextPage(){
     //this.pagina++;
     this.router.navigate(['/courses'], 
       {queryParams: {'page': ++this.page}});
